@@ -1,5 +1,19 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+
+img
+{
+	max-width: 100%;
+}
+
+.container
+{
+	width: 80%;
+	max-width: 1140px;
+	margin: 5rem auto;
+}
+
