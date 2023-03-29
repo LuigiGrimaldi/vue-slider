@@ -10,35 +10,38 @@
 </head>
 
 <body>
-
-	<div class="container">
-		<button class="auto">
-			<span>Autoplay</span>
-			<i class="fa-solid fa-arrow-rotate-left"></i>
-		</button>
-		<div class="slider">
-			<div class="images"></div>
-			<nav class="controls">
-				<button class="prev">
-					<i class="fas fa-arrow-up"></i>
-				</button>
-				<button class="next">
-					<i class="fas fa-arrow-down"></i>
-				</button>
-			</nav>
-			<div class="slides">
-	
-			</div>
-	
-	
-	
-			<div class="thumbs">
-			
+	<div id="app">
+		<div class="container">
+			<button class="auto">
+				<span>Autoplay</span>
+				<i class="fa-solid fa-arrow-rotate-left"></i>
+			</button>
+			<div class="slider">
+				<div class="images"></div>
+				<nav class="controls">
+					<button class="prev">
+						<i class="fas fa-arrow-up"></i>
+					</button>
+					<button class="next">
+						<i class="fas fa-arrow-down"></i>
+					</button>
+				</nav>
+				<div class="slides">
+					<img  v-bind:src="arrImages.images[activeImage]" alt="">
+				</div>
+		
+		
+		
+				<div class="thumbs">
+				
+				</div>
 			</div>
 		</div>
 	</div>
 
+
 	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 	<script src="./assets/js/app.js"></script>
 </body>
 
